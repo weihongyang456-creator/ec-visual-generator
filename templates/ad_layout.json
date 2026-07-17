@@ -1,0 +1,36 @@
+{
+  "version": "1.0.0",
+  "description": "广告图排版模板",
+  "ad_types": [
+    {
+      "ad_num": 1,
+      "name": "信息流广告图",
+      "purpose": "信息流投放，吸引点击",
+      "dimensions": [1080, 1080],
+      "ratio": "1:1",
+      "design_logic": "产品突出+1个核心卖点+场景化背景，文字精简有力",
+      "text_overlay": {
+        "main_copy": "核心卖点一句话",
+        "sub_copy": "支持性参数/促销信息",
+        "cta": "立即抢购"
+      },
+      "gen_method": "ai_generate + pillow_compose",
+      "prompt_keywords": ["advertising", "social media ad", "eye-catching", "product focused", "lifestyle background"]
+    },
+    {
+      "ad_num": 2,
+      "name": "搜索广告图",
+      "purpose": "搜索结果页展示，促点击",
+      "dimensions": [800, 800],
+      "ratio": "1:1",
+      "design_logic": "产品白底+促销标签+价格信息，信息密度适中",
+      "text_overlay": {
+        "main_copy": "产品名+核心卖点",
+        "sub_copy": "促销价格/优惠",
+        "badge": "热销/新品/限时"
+      },
+      "gen_method": "pillow_compose",
+      "prompt_keywords": ["search ad", "product showcase", "promo badge", "clean white background"]
+    }
+  ]
+}

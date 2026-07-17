@@ -1,0 +1,177 @@
+{
+  "version": "1.0.0",
+  "description": "通用电商痛点库，按品类分类",
+  "categories": {
+    "3C数码": {
+      "pain_points": [
+        {
+          "id": "3c_pain_001",
+          "scenario": "通勤地铁噪音大",
+          "pain": "地铁/公交噪音吵杂，听歌听不清，通话对方听不见",
+          "solution": "主动降噪+ENC通话降噪，沉浸式体验",
+          "target_audience": "通勤族"
+        },
+        {
+          "id": "3c_pain_002",
+          "scenario": "电量焦虑",
+          "pain": "出门忘充电，半路没电，充电宝又重又麻烦",
+          "solution": "长续航+快充，充电10分钟用2小时",
+          "target_audience": "重度使用者"
+        },
+        {
+          "id": "3c_pain_003",
+          "scenario": "运动掉落",
+          "pain": "跑步/健身耳机掉落，线缆缠绕影响运动",
+          "solution": "轻量化+防水防汗+稳固佩戴",
+          "target_audience": "运动爱好者"
+        },
+        {
+          "id": "3c_pain_004",
+          "scenario": "游戏延迟",
+          "pain": "吃鸡延迟高，听声辨位不准，影响游戏体验",
+          "solution": "低延迟游戏模式，延迟<45ms",
+          "target_audience": "手游玩家"
+        },
+        {
+          "id": "3c_pain_005",
+          "scenario": "多设备切换麻烦",
+          "pain": "手机和电脑来回切换蓝牙，每次都要重新连接",
+          "solution": "一拖二多设备连接，无缝切换",
+          "target_audience": "办公人群"
+        },
+        {
+          "id": "3c_pain_006",
+          "scenario": "久戴不适",
+          "pain": "戴久了耳朵疼/胀，入耳式有压迫感",
+          "solution": "人体工学设计+轻量化，单只<5g",
+          "target_audience": "长时间佩戴者"
+        }
+      ]
+    },
+    "家居生活": {
+      "pain_points": [
+        {
+          "id": "home_pain_001",
+          "scenario": "空间不足",
+          "pain": "东西多空间小，收纳不够用，家里乱糟糟",
+          "solution": "科学分区收纳设计，空间翻倍",
+          "target_audience": "小户型住户"
+        },
+        {
+          "id": "home_pain_002",
+          "scenario": "清洁麻烦",
+          "pain": "油污难清理，缝隙藏污纳垢，清洁费时费力",
+          "solution": "防油污涂层+可拆卸水洗",
+          "target_audience": "家庭主妇/夫"
+        },
+        {
+          "id": "home_pain_003",
+          "scenario": "噪音扰民",
+          "pain": "电器噪音大，影响家人休息，邻居投诉",
+          "solution": "低噪设计，<50dB静音运行",
+          "target_audience": "有孩家庭"
+        },
+        {
+          "id": "home_pain_004",
+          "scenario": "操作复杂",
+          "pain": "功能多但不会用，按键复杂，老人不会操作",
+          "solution": "一键操作+智能APP控制",
+          "target_audience": "银发族"
+        }
+      ]
+    },
+    "美妆个护": {
+      "pain_points": [
+        {
+          "id": "beauty_pain_001",
+          "scenario": "脱妆尴尬",
+          "pain": "出门2小时就脱妆，补妆又没地方",
+          "solution": "持久锁妆配方，8小时不脱妆",
+          "target_audience": "上班族女性"
+        },
+        {
+          "id": "beauty_pain_002",
+          "scenario": "敏感肌不适",
+          "pain": "用很多产品都过敏，不敢轻易尝试新品",
+          "solution": "无添加配方，敏感肌测试通过",
+          "target_audience": "敏感肌人群"
+        },
+        {
+          "id": "beauty_pain_003",
+          "scenario": "选择困难",
+          "pain": "色号太多选不对，买回来不适合自己",
+          "solution": "多色试色+肤色适配推荐",
+          "target_audience": "化妆新手"
+        }
+      ]
+    },
+    "服饰鞋包": {
+      "pain_points": [
+        {
+          "id": "fashion_pain_001",
+          "scenario": "尺码不合",
+          "pain": "网购尺码不准，退换货麻烦",
+          "solution": "详细尺码表+模特试穿数据",
+          "target_audience": "网购用户"
+        },
+        {
+          "id": "fashion_pain_002",
+          "scenario": "起球变形",
+          "pain": "洗几次就起球/变形/掉色",
+          "solution": "精梳棉+固色工艺，耐洗不起球",
+          "target_audience": "追求性价比"
+        },
+        {
+          "id": "fashion_pain_003",
+          "scenario": "搭配困难",
+          "pain": "买了不知道怎么搭，闲置率高",
+          "solution": "百搭基础款，一衣多穿",
+          "target_audience": "穿搭小白"
+        }
+      ]
+    },
+    "潮玩收藏": {
+      "pain_points": [
+        {
+          "id": "toy_pain_001",
+          "scenario": "品质参差",
+          "pain": "市面潮玩品质差，涂装粗糙，有瑕疵",
+          "solution": "手工精涂+QC品控，品质保证",
+          "target_audience": "品质追求者"
+        },
+        {
+          "id": "toy_pain_002",
+          "scenario": "同质化严重",
+          "pain": "市面上都是仿款，没有原创性",
+          "solution": "原创IP设计，独一无二",
+          "target_audience": "IP收藏爱好者"
+        },
+        {
+          "id": "toy_pain_003",
+          "scenario": "没有情感连接",
+          "pain": "纯装饰品缺乏故事感，买完就束之高阁",
+          "solution": "有世界观的IP角色，情感共鸣",
+          "target_audience": "情感消费群体"
+        }
+      ]
+    },
+    "食品饮料": {
+      "pain_points": [
+        {
+          "id": "food_pain_001",
+          "scenario": "成分不透明",
+          "pain": "看不懂配料表，担心添加剂",
+          "solution": "0添加+成分透明标注",
+          "target_audience": "健康饮食者"
+        },
+        {
+          "id": "food_pain_002",
+          "scenario": "携带不便",
+          "pain": "大包装吃不完，开封返潮",
+          "solution": "独立小包装，控量便携",
+          "target_audience": "上班族/学生"
+        }
+      ]
+    }
+  }
+}

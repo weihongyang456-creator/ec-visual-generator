@@ -1,0 +1,129 @@
+{
+  "version": "1.0.0",
+  "description": "详情页排版模板，11-13张详情页逻辑",
+  "default_size": {
+    "ratio": "variable",
+    "dimensions": [750, "auto"],
+    "platform": "淘宝/抖音/京东详情页",
+    "note": "宽度固定750px，高度根据内容自适应"
+  },
+  "slides": [
+    {
+      "slide_num": 1,
+      "name": "品牌首屏",
+      "purpose": "品牌形象+产品首印象，建立调性",
+      "design_logic": "全屏产品大图，品牌slogan，高级感氛围",
+      "height": 1000,
+      "gen_method": "ai_generate",
+      "prompt_keywords": ["hero banner", "brand identity", "premium feel", "dramatic lighting"]
+    },
+    {
+      "slide_num": 2,
+      "name": "卖点总览",
+      "purpose": "核心卖点一览，快速了解产品优势",
+      "design_logic": "网格布局，3-4个核心卖点图标+短文案",
+      "height": 800,
+      "gen_method": "pillow_compose",
+      "prompt_keywords": ["feature overview", "icon grid", "clean layout"]
+    },
+    {
+      "slide_num": 3,
+      "name": "卖点详解1",
+      "purpose": "核心卖点深度解读1",
+      "design_logic": "大图+文字说明，参数可视化",
+      "height": 900,
+      "gen_method": "pillow_compose",
+      "prompt_keywords": ["feature detail", "infographic", "parameter visualization"]
+    },
+    {
+      "slide_num": 4,
+      "name": "卖点详解2",
+      "purpose": "核心卖点深度解读2",
+      "design_logic": "大图+文字说明，使用效果展示",
+      "height": 900,
+      "gen_method": "pillow_compose",
+      "prompt_keywords": ["feature detail", "effect showcase"]
+    },
+    {
+      "slide_num": 5,
+      "name": "使用场景1",
+      "purpose": "场景化展示，人群代入",
+      "design_logic": "真实场景大图，人物使用画面",
+      "height": 1000,
+      "gen_method": "ai_generate",
+      "prompt_keywords": ["lifestyle", "scene 1", "target audience", "natural environment"]
+    },
+    {
+      "slide_num": 6,
+      "name": "使用场景2",
+      "purpose": "多场景覆盖，扩大人群",
+      "design_logic": "不同使用场景，生活方式传递",
+      "height": 1000,
+      "gen_method": "ai_generate",
+      "prompt_keywords": ["lifestyle", "scene 2", "different context", "versatile usage"]
+    },
+    {
+      "slide_num": 7,
+      "name": "产品细节1",
+      "purpose": "材质/工艺细节展示",
+      "design_logic": "微距特写，材质纹理，工艺细节",
+      "height": 800,
+      "gen_method": "ai_generate",
+      "prompt_keywords": ["macro detail", "material texture", "craftsmanship", "close-up"]
+    },
+    {
+      "slide_num": 8,
+      "name": "产品细节2",
+      "purpose": "功能细节/接口/按键展示",
+      "design_logic": "局部特写，功能部件标注",
+      "height": 800,
+      "gen_method": "ai_generate",
+      "prompt_keywords": ["detail close-up", "functional parts", "interface design"]
+    },
+    {
+      "slide_num": 9,
+      "name": "参数规格表",
+      "purpose": "完整产品参数，理性决策支持",
+      "design_logic": "表格化布局，参数清晰列出",
+      "height": 700,
+      "gen_method": "pillow_compose",
+      "prompt_keywords": ["specification table", "parameter list", "clean data layout"]
+    },
+    {
+      "slide_num": 10,
+      "name": "包装清单",
+      "purpose": "开箱展示，价值感传递",
+      "design_logic": "全家福展示，配件逐一标注",
+      "height": 800,
+      "gen_method": "ai_generate",
+      "prompt_keywords": ["package contents", "unboxing", "accessories layout"]
+    },
+    {
+      "slide_num": 11,
+      "name": "品牌故事",
+      "purpose": "信任背书，品牌理念传递",
+      "design_logic": "品牌历程/理念/认证，增强信任感",
+      "height": 900,
+      "gen_method": "pillow_compose",
+      "prompt_keywords": ["brand story", "trust building", "certification", "heritage"]
+    },
+    {
+      "slide_num": 12,
+      "name": "售后保障",
+      "purpose": "消除购买顾虑",
+      "design_logic": "售后政策图标+文案，保障承诺",
+      "height": 700,
+      "gen_method": "pillow_compose",
+      "prompt_keywords": ["warranty", "after-sales", "guarantee", "trust icons"]
+    },
+    {
+      "slide_num": 13,
+      "name": "行动号召",
+      "purpose": "促转化，引导下单",
+      "design_logic": "限时优惠+立即购买引导",
+      "height": 600,
+      "gen_method": "pillow_compose",
+      "prompt_keywords": ["call to action", "buy now", "limited offer", "conversion"]
+    }
+  ]
+}

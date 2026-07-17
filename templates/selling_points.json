@@ -1,0 +1,316 @@
+{
+  "version": "1.0.0",
+  "description": "通用电商卖点库，按品类分类",
+  "categories": {
+    "3C数码": {
+      "subcategories": ["耳机", "音箱", "充电器", "手机配件", "智能穿戴", "键盘鼠标"],
+      "selling_points": [
+        {
+          "id": "3c_001",
+          "title": "长续航",
+          "description": "全天候陪伴，告别电量焦虑",
+          "detail_template": "{battery}超长续航，单次充电支持{use_hours}小时连续使用，满足全天使用需求",
+          "applicable_params": ["battery", "use_hours"]
+        },
+        {
+          "id": "3c_002",
+          "title": "快速充电",
+          "description": "充电X分钟，使用X小时",
+          "detail_template": "支持快充技术，充电{charge_time}分钟即可使用{use_time}，紧急时刻不等待",
+          "applicable_params": ["charge_time", "use_time"]
+        },
+        {
+          "id": "3c_003",
+          "title": "蓝牙5.3",
+          "description": "稳定连接，低延迟",
+          "detail_template": "搭载蓝牙{bluetooth}芯片，连接稳定不掉线，延迟低至{latency}ms，游戏影音同步",
+          "applicable_params": ["bluetooth", "latency"]
+        },
+        {
+          "id": "3c_004",
+          "title": "主动降噪",
+          "description": "沉浸式音质体验",
+          "detail_template": "{anc_db}dB主动降噪，有效过滤环境噪音，通勤/办公/旅行沉浸享受",
+          "applicable_params": ["anc_db"]
+        },
+        {
+          "id": "3c_005",
+          "title": "高清音质",
+          "description": "Hi-Res认证音质",
+          "detail_template": "{driver_size}大动圈单元，Hi-Res音质认证，三频均衡，还原现场级听感",
+          "applicable_params": ["driver_size"]
+        },
+        {
+          "id": "3c_006",
+          "title": "轻量化设计",
+          "description": "佩戴无感，久戴不累",
+          "detail_template": "单只仅重{weight}g，人体工学设计，久戴不累，运动不掉",
+          "applicable_params": ["weight"]
+        },
+        {
+          "id": "3c_007",
+          "title": "防水防汗",
+          "description": "IPX防水等级",
+          "detail_template": "IPX{waterproof}防水等级，无惧汗水和雨水，运动场景自由使用",
+          "applicable_params": ["waterproof"]
+        },
+        {
+          "id": "3c_008",
+          "title": "多设备连接",
+          "description": "一拖二无缝切换",
+          "detail_template": "支持同时连接2台设备，手机/电脑无缝切换，办公娱乐两不误",
+          "applicable_params": []
+        },
+        {
+          "id": "3c_009",
+          "title": "触控操作",
+          "description": "指尖轻触，便捷操控",
+          "detail_template": "智能触控面板，轻触/双击/长按自定义操作，盲操无压力",
+          "applicable_params": []
+        },
+        {
+          "id": "3c_010",
+          "title": "低延迟游戏模式",
+          "description": "游戏影音同步",
+          "detail_template": "专属游戏模式，延迟低至{latency}ms，吃鸡听声辨位，先发制人",
+          "applicable_params": ["latency"]
+        },
+        {
+          "id": "3c_011",
+          "title": "ENC通话降噪",
+          "description": "清晰通话，如面对面交流",
+          "detail_template": "双麦ENC通话降噪，有效消除环境噪音，对方听得更清晰",
+          "applicable_params": []
+        },
+        {
+          "id": "3c_012",
+          "title": "智能穿戴",
+          "description": "健康监测/消息提醒",
+          "detail_template": "24小时心率/血氧监测，消息提醒/久坐提醒，健康管理一手掌握",
+          "applicable_params": []
+        }
+      ]
+    },
+    "家居生活": {
+      "subcategories": ["小家电", "收纳整理", "厨具", "床上用品", "灯具", "装饰"],
+      "selling_points": [
+        {
+          "id": "home_001",
+          "title": "节能省电",
+          "description": "一级能效，低碳生活",
+          "detail_template": "一级能效标准，功率仅{power}W，日均耗电不足1度，省钱又环保",
+          "applicable_params": ["power"]
+        },
+        {
+          "id": "home_002",
+          "title": "多功能合一",
+          "description": "一机多用，省空间",
+          "detail_template": "{function_count}合1多功能设计，一台抵{function_count}台，小户型福音",
+          "applicable_params": ["function_count"]
+        },
+        {
+          "id": "home_003",
+          "title": "食品级材质",
+          "description": "安全无毒，放心使用",
+          "detail_template": "采用{material}食品级材质，通过{certification}认证，母婴级安全",
+          "applicable_params": ["material", "certification"]
+        },
+        {
+          "id": "home_004",
+          "title": "静音设计",
+          "description": "低噪运行，不扰民",
+          "detail_template": "{noise_db}dB低噪运行，相当于图书馆环境，不影响睡眠和办公",
+          "applicable_params": ["noise_db"]
+        },
+        {
+          "id": "home_005",
+          "title": "易清洁",
+          "description": "一擦即净，省心省力",
+          "detail_template": "防油污涂层设计，一擦即净，拆卸水洗，清洁省心",
+          "applicable_params": []
+        },
+        {
+          "id": "home_006",
+          "title": "收纳神器",
+          "description": "空间翻倍，整洁有序",
+          "detail_template": "科学分区设计，容量{capacity}L，让{room}空间瞬间翻倍",
+          "applicable_params": ["capacity", "room"]
+        },
+        {
+          "id": "home_007",
+          "title": "智能控制",
+          "description": "APP远程操控",
+          "detail_template": "手机APP远程控制，定时开关/模式切换，回家即享舒适",
+          "applicable_params": []
+        },
+        {
+          "id": "home_008",
+          "title": "北欧简约设计",
+          "description": "高颜值，百搭家居",
+          "detail_template": "北欧极简设计语言，{color}配色，融入各种家居风格",
+          "applicable_params": ["color"]
+        }
+      ]
+    },
+    "美妆个护": {
+      "subcategories": ["护肤", "彩妆", "美容工具", "口腔护理", "身体护理"],
+      "selling_points": [
+        {
+          "id": "beauty_001",
+          "title": "温和不刺激",
+          "description": "敏感肌适用",
+          "detail_template": "通过{certification}认证，无添加{ingredients}，敏感肌测试通过",
+          "applicable_params": ["certification", "ingredients"]
+        },
+        {
+          "id": "beauty_002",
+          "title": "深层滋养",
+          "description": "由内而外焕发",
+          "detail_template": "含{active_ingredient}精华成分，深层渗透，{effect_time}见效",
+          "applicable_params": ["active_ingredient", "effect_time"]
+        },
+        {
+          "id": "beauty_003",
+          "title": "持久妆效",
+          "description": "{hours}小时不脱妆",
+          "detail_template": "{hours}小时持久锁妆，防水防汗，全天精致不补妆",
+          "applicable_params": ["hours"]
+        },
+        {
+          "id": "beauty_004",
+          "title": "一物多用",
+          "description": "多场景适用",
+          "detail_template": "{function_count}种用法，一物抵多物，化妆包减负",
+          "applicable_params": ["function_count"]
+        },
+        {
+          "id": "beauty_005",
+          "title": "便携设计",
+          "description": "随身携带，随时补妆",
+          "detail_template": "迷你便携设计，仅{size}大小，放入化妆包/口袋不占地",
+          "applicable_params": ["size"]
+        }
+      ]
+    },
+    "服饰鞋包": {
+      "subcategories": ["男装", "女装", "童装", "鞋履", "箱包", "配饰"],
+      "selling_points": [
+        {
+          "id": "fashion_001",
+          "title": "面料舒适",
+          "description": "亲肤透气",
+          "detail_template": "采用{material}面料，亲肤透气，穿着体验如第二层肌肤",
+          "applicable_params": ["material"]
+        },
+        {
+          "id": "fashion_002",
+          "title": "版型修身",
+          "description": "显瘦显高",
+          "detail_template": "3D立体剪裁，{fit_type}版型，视觉显瘦{cm}cm",
+          "applicable_params": ["fit_type", "cm"]
+        },
+        {
+          "id": "fashion_003",
+          "title": "百搭单品",
+          "description": "一衣多穿",
+          "detail_template": "经典{style}风格，搭配{match_count}种穿搭场景，衣橱必备",
+          "applicable_params": ["style", "match_count"]
+        },
+        {
+          "id": "fashion_004",
+          "title": "工艺精良",
+          "description": "细节见品质",
+          "detail_template": "{craft}工艺，{stitch_density}针距密缝，耐穿不起球",
+          "applicable_params": ["craft", "stitch_density"]
+        },
+        {
+          "id": "fashion_005",
+          "title": "潮流设计",
+          "description": "当季流行款",
+          "detail_template": "{season}新款，融入{trend_element}流行元素，出街回头率高",
+          "applicable_params": ["season", "trend_element"]
+        }
+      ]
+    },
+    "潮玩收藏": {
+      "subcategories": ["vinyl figures", "毛绒玩具", "手办", "盲盒", "收藏品"],
+      "selling_points": [
+        {
+          "id": "toy_001",
+          "title": "原创IP设计",
+          "description": "独家原创，独一无二",
+          "detail_template": "原创IP角色设计，{designer}主笔，全球限量{limit_count}体",
+          "applicable_params": ["designer", "limit_count"]
+        },
+        {
+          "id": "toy_002",
+          "title": "高品质材质",
+          "description": "环保安全，质感出众",
+          "detail_template": "采用{material}材质，环保无毒涂层，手感细腻有质感",
+          "applicable_params": ["material"]
+        },
+        {
+          "id": "toy_003",
+          "title": "精细涂装",
+          "description": "手工涂装，每件独特",
+          "detail_template": "匠人手工涂装，{paint_layers}层上色工艺，细节还原度极高",
+          "applicable_params": ["paint_layers"]
+        },
+        {
+          "id": "toy_004",
+          "title": "收藏价值",
+          "description": "限量编号，保值增值",
+          "detail_template": "限量编号发售，附收藏证书，IP热度持续上升，具有保值空间",
+          "applicable_params": []
+        },
+        {
+          "id": "toy_005",
+          "title": "情感共鸣",
+          "description": "治愈陪伴",
+          "detail_template": "{character_name}IP形象，传递{emotion}情感，治愈日常疲惫",
+          "applicable_params": ["character_name", "emotion"]
+        },
+        {
+          "id": "toy_006",
+          "title": "可动关节",
+          "description": "多姿态摆放",
+          "detail_template": "{joint_count}个可动关节设计，自由变换{pose_count}种姿态，可玩性高",
+          "applicable_params": ["joint_count", "pose_count"]
+        }
+      ]
+    },
+    "食品饮料": {
+      "subcategories": ["零食", "饮品", "保健品", "茶叶", "烘焙"],
+      "selling_points": [
+        {
+          "id": "food_001",
+          "title": "真材实料",
+          "description": "天然原料，无添加",
+          "detail_template": "精选{origin}产地{ingredient}，0添加{additives}，还原自然本味",
+          "applicable_params": ["origin", "ingredient", "additives"]
+        },
+        {
+          "id": "food_002",
+          "title": "营养健康",
+          "description": "科学配比",
+          "detail_template": "{calories}kcal/份，富含{nutrition}，{diet_type}友好",
+          "applicable_params": ["calories", "nutrition", "diet_type"]
+        },
+        {
+          "id": "food_003",
+          "title": "独立包装",
+          "description": "便携卫生",
+          "detail_template": "独立小包装设计，{pack_count}包/盒，便携不返潮，控量好习惯",
+          "applicable_params": ["pack_count"]
+        },
+        {
+          "id": "food_004",
+          "title": "多场景适用",
+          "description": "随时享用",
+          "detail_template": "早餐/下午茶/运动后多场景适用，{shelf_life}个月保质期",
+          "applicable_params": ["shelf_life"]
+        }
+      ]
+    }
+  }
+}

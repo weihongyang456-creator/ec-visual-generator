@@ -1,0 +1,95 @@
+{
+  "version": "1.0.0",
+  "description": "主图排版模板，5张主图逻辑，2个尺寸版本",
+  "sizes": {
+    "square_1_1": {
+      "ratio": "1:1",
+      "dimensions": [1080, 1080],
+      "platform": "淘宝/京东/拼多多主图",
+      "safe_area": {"x": 80, "y": 80, "width": 920, "height": 920}
+    },
+    "portrait_3_4": {
+      "ratio": "3:4",
+      "dimensions": [1080, 1440],
+      "platform": "抖音/小红书主图",
+      "safe_area": {"x": 80, "y": 100, "width": 920, "height": 1240}
+    }
+  },
+  "slides": [
+    {
+      "slide_num": 1,
+      "name": "首图",
+      "purpose": "产品白底展示，清晰传达产品外观",
+      "design_logic": "纯净白底，产品居中，光影立体感，底部品牌logo",
+      "text_overlay": {
+        "enabled": true,
+        "content": "品牌名 + 核心卖点关键词",
+        "position": "bottom_center",
+        "font_size_ratio": 0.04
+      },
+      "bg_type": "white_background",
+      "gen_method": "user_original",
+      "prompt_keywords": ["product photography", "white background", "studio lighting", "centered composition", "high detail"]
+    },
+    {
+      "slide_num": 2,
+      "name": "卖点图1",
+      "purpose": "核心功能亮点展示",
+      "design_logic": "产品局部放大+功能标注线，图文结合说明核心卖点",
+      "text_overlay": {
+        "enabled": true,
+        "content": "核心卖点标题 + 参数数据",
+        "position": "top_left",
+        "font_size_ratio": 0.05
+      },
+      "bg_type": "gradient_or_solid",
+      "gen_method": "pillow_compose",
+      "prompt_keywords": ["product detail", "feature highlight", "clean layout", "modern design"]
+    },
+    {
+      "slide_num": 3,
+      "name": "场景图",
+      "purpose": "使用场景化展示，人群共鸣",
+      "design_logic": "真实使用场景，人物互动，氛围感",
+      "text_overlay": {
+        "enabled": true,
+        "content": "场景文案 + 人群标签",
+        "position": "bottom_center",
+        "font_size_ratio": 0.04
+      },
+      "bg_type": "scene_background",
+      "gen_method": "ai_generate",
+      "prompt_keywords": ["lifestyle scene", "natural lighting", "real environment", "emotional connection"]
+    },
+    {
+      "slide_num": 4,
+      "name": "对比图",
+      "purpose": "竞品对比/前后对比，凸显优势",
+      "design_logic": "左右/上下对比，数据可视化，优势一目了然",
+      "text_overlay": {
+        "enabled": true,
+        "content": "对比维度标注 + 优势高亮",
+        "position": "center",
+        "font_size_ratio": 0.045
+      },
+      "bg_type": "split_layout",
+      "gen_method": "pillow_compose",
+      "prompt_keywords": ["comparison", "before after", "data visualization", "clear contrast"]
+    },
+    {
+      "slide_num": 5,
+      "name": "促销图",
+      "purpose": "优惠信息+行动号召",
+      "design_logic": "促销信息突出，紧迫感设计，行动号召按钮",
+      "text_overlay": {
+        "enabled": true,
+        "content": "优惠金额/折扣 + 限时标签 + 立即购买",
+        "position": "center",
+        "font_size_ratio": 0.06
+      },
+      "bg_type": "brand_color",
+      "gen_method": "pillow_compose",
+      "prompt_keywords": ["promotional", "sale", "call to action", "urgency", "bold typography"]
+    }
+  ]
+}
