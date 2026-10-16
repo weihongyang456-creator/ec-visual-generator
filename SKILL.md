@@ -59,8 +59,20 @@ python3 /workspace/ec-visual-generator/scripts/generate_all.py \
 | `--params` | ❌ | 产品参数JSON字符串 |
 | `--brand-style` | ❌ | 品牌调性描述 |
 | `--output-dir` | ❌ | 输出目录（默认 `/workspace/ec-visual-generator/output`） |
-| `--skip-ai-gen` | ❌ | 跳过AI生图，仅生成文案和外部指令 |
+| `--skip-ai-gen` | ❌ | 跳过内置 AI 生图调用；Pillow 合成图仍会生成，AI 模块输出外部生图指令 |
 | `--api-key` | ❌ | Gemini API Key |
+
+---
+
+## 使用前的重要限制
+
+- 命令示例中的产品参数是演示值，不代表任何 TESNA 型号的真实参数。运行前必须替换为已经确认的产品资料。
+- 当前 AI 生图脚本依赖特定环境中的 nano-banana-pro 插件路径和 `uv`，并非下载仓库后即可在任意电脑直接生图。
+- 主流程和文件整理器默认输出路径为 `/workspace/ec-visual-generator/output`；在其他环境中请显式指定 `--output-dir`。
+- 当前代码包含需要人工核对的默认内容，例如售后政策、对比文案、卖点库中的降噪/快充/低延迟描述。未经产品和店铺政策确认，不得直接用于正式上架。
+- 首图的当前实现可能直接拉伸原图到目标尺寸，产品外观可能失真；正式使用前应先修复并测试。
+- `--skip-ai-gen` 仅跳过内置 AI 生图调用，不等于只生成文案；Pillow 合成模块仍可能输出图片。
+- 详细静态审查结果见 [docs/仓库审查与使用边界.md](docs/仓库审查与使用边界.md)。
 
 ---
 
