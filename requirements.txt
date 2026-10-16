@@ -1,0 +1,2 @@
+# Direct Python dependency used by scripts/image_compose.py and generate_all.py
+Pillow>=9.0
