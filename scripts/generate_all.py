@@ -35,6 +35,19 @@ from image_compose import (
 )
 
 
+def fit_image_on_canvas(image, target_size, background=(255, 255, 255)):
+    """按比例缩放图片并居中放入固定尺寸画布，避免拉伸主体。"""
+    from PIL import Image as PILImage, ImageOps
+
+    source = image.convert("RGB")
+    fitted = ImageOps.contain(source, target_size, method=PILImage.LANCZOS)
+    canvas = PILImage.new("RGB", target_size, background)
+    x = (target_size[0] - fitted.width) // 2
+    y = (target_size[1] - fitted.height) // 2
+    canvas.paste(fitted, (x, y))
+    return canvas
+
+
 def parse_args():
     parser = argparse.ArgumentParser(description="电商产品视觉内容自动化生成工具")
     parser.add_argument("--product-name", required=True, help="产品名称")
@@ -123,8 +136,8 @@ def main():
                 # 使用用户原图，缩放为目标尺寸
                 from PIL import Image as PILImage
                 try:
-                    img = PILImage.open(product_image).convert("RGB")
-                    img = img.resize(dims, PILImage.LANCZOS)
+                    with PILImage.open(product_image) as source:
+                        img = fit_image_on_canvas(source, dims)
                     out_path = organizer.dirs[dir_key] / filename
                     img.save(str(out_path), "PNG", quality=95)
                     item["success"] = True
